@@ -8,7 +8,7 @@ public class Main {
         System.out.print("please input number of element in array: ");
         int length = input.nextInt();
 
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < length; i++) {
             System.out.printf("please enter element number %d:",(i+1));
@@ -83,11 +83,7 @@ public class Main {
             int aPlusC = a + c;
             int bPlusC = b + c;
 
-            if (aPlusB > c && aPlusC > b && bPlusC > a) {
-                return true;
-            } else {
-                return false;
-            }
+            return aPlusB > c && aPlusC > b && bPlusC > a;
         }else {
             return false;
         }
